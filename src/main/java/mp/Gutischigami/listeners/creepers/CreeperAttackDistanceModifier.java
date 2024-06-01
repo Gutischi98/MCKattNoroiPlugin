@@ -22,7 +22,7 @@ public class CreeperAttackDistanceModifier implements Listener {
             double customAttackRange = 2.0; // Distancia de ataque personalizada en bloques.
 
             if (creeper.getLocation().distance(player.getLocation()) > customAttackRange) {
-                event.setCancelled(true); // Cancela el ataque si está fuera del rango
+                event.setCancelled(true); // Cancela el ataque si está fuera del rango especificado.
             }
         }
     }
