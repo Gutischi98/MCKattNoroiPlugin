@@ -1,0 +1,11 @@
+main: mp.Gutischigami.MiPlugin
+version: 1.0.0
+name: MiPlugin
+author: Gutischigami
+api-version: 1.13
+
+commands:
+  kattnoroi:
+    description: comando del plugin
+    aliases:
+      - mp

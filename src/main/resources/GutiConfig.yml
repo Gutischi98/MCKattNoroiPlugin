@@ -1,0 +1,13 @@
+messages:
+  preventKike: "&cOye tonto, no escribai eso aweonao."
+  preventCtm: "&cOrdinario."
+config:
+  welcome_message:
+    enable: true
+    message:
+      - "&a&m                                     "
+      - ""
+      - "&fBienvenido! &b%Player% al servidor"
+      - "&fPasalo joya"
+      - ""
+      - "&a&m                                     "

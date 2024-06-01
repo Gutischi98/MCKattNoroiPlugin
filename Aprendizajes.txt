@@ -1,0 +1,20 @@
+---- 29 de mayo del 2024 ----
+Hoy aprendí a utilizar la api "Spigot", aprendiendo a armar lo básico como él .yml y el pom.xml.
+También utilicé el Bukkit para poder armar y comunicar el juego con el lenguaje Java.
+
+*** ---- PLUGIN != MOD ---- ***
+
+sender: Quien ejecuta el comando, este puede ser el jugador, el admin, op, etc.
+ColoredMessage: se puede utilizar para generar mensajes de colores, los clásicos de los servers de MC.
+EqualsIgnoreCase: método que hace que el comando no sea Case Sensitive.
+
+***Importante***
+Crear siempre una carpeta de utilidades, donde se pueden crear métodos para referenciar dentro de la estructura del plugin.
+A su vez los comandos van fuera del archivo principal, si bien se podría generar los comandos dentro de este, no es para nada accesible.
+
+---- 30 de mayo del 2024 ----
+
+Hoy aprendí la detección de eventos, tales como la entrada al servidor, palabras del chat, rompimiento de bloques. También aprendí el uso de los subcomandos, estos heredan desde el CommandSender sender. Esto es util para hacer comandos que no son parte de los principales, como pueden ser los que utilizan más de un argumento, los de recarga de config, etc. Mencionando los enventos, algunos de estos no se pueden cancelar, como por ejemplo: PlayerJoinEvent, no es cancelable (no se puede usar un event.setCanceled(), debido a que no implementan la función. (todo está en la documentación).
+Mencionando la config, también aprendí que para poder realizar un archivo de configuración se debe crear en la carpeta de resources, además hay que crear una clase MainConfigManager, que tomará las variables con sus tipos y mediante getters, tomará el valor y de esta manera poder cambiarlo en el archivo config.yml, de tal forma que el admin de un server no tenga que meterse a cambiar el código, sino que solo deberá cambiar lo que necesite y también lo que se deje cambiar.
+
+Es complejo, la verdad es hasta un poco enredado, pero es cosa de practicar y ver una y otra vez el código para entender que hice, como lo hice y como replicarlo en otro archivo. Intentaré hacer uno propio y me guiaré de la documentación y lo aprendido.
