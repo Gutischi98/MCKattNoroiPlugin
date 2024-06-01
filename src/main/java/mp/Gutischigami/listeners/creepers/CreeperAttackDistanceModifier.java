@@ -19,7 +19,7 @@ public class CreeperAttackDistanceModifier implements Listener {
         if (event.getDamager() instanceof Zombie && event.getEntity() instanceof Player) {
             Creeper creeper = (Creeper) event.getDamager();
             Player player = (Player) event.getEntity();
-            double customAttackRange = 2.0; // Distancia de ataque personalizada en bloques
+            double customAttackRange = 2.0; // Distancia de ataque personalizada en bloques para modificar.
 
             if (creeper.getLocation().distance(player.getLocation()) > customAttackRange) {
                 event.setCancelled(true); // Cancela el ataque si está fuera del rango
