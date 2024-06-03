@@ -12,7 +12,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
-//Se crea la clase MiPlugin (esta se debe llamar como se llama el plugin)
+//Se crea la clase MiPlugin (esta se debe llamar como se llama el plugin, además esta hereda de JavaPlugin.)
 public class MiPlugin extends JavaPlugin {
 
     public static String prefix = "&6[&eKattNoroi] ";
