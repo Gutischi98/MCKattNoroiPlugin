@@ -26,6 +26,4 @@ public class ZombieMovSpeedModifier implements Listener {
             }
         }
     }
-
-
 }

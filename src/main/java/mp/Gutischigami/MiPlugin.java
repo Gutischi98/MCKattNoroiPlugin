@@ -3,8 +3,11 @@ import mp.Gutischigami.commands.MainCommand;
 import mp.Gutischigami.config.MainConfigManager;
 import mp.Gutischigami.listeners.creepers.CreeperAttackDistanceModifier;
 import mp.Gutischigami.listeners.PlayerListener;
+import mp.Gutischigami.listeners.creepers.CreeperMovSpeedModifier;
 import mp.Gutischigami.listeners.skeletons.SkeletonAttackDistanceModifier;
+import mp.Gutischigami.listeners.skeletons.SkeletonMovSpeedModifier;
 import mp.Gutischigami.listeners.zombies.ZombieAttackDistanceModifier;
+import mp.Gutischigami.listeners.zombies.ZombieMovSpeedModifier;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -23,6 +26,9 @@ public class MiPlugin extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new ZombieAttackDistanceModifier(this), this);
         getServer().getPluginManager().registerEvents(new CreeperAttackDistanceModifier(this), this);
         getServer().getPluginManager().registerEvents(new SkeletonAttackDistanceModifier(this), this);
+        getServer().getPluginManager().registerEvents(new ZombieMovSpeedModifier(this), this);
+        getServer().getPluginManager().registerEvents(new CreeperMovSpeedModifier(this), this);
+        getServer().getPluginManager().registerEvents(new SkeletonMovSpeedModifier(this), this);
 
 
         Bukkit.getConsoleSender().sendMessage(
