@@ -20,7 +20,7 @@ public class SkeletonMovSpeedModifier implements Listener {
                 Skeleton skeleton = (Skeleton) event.getEntity();
                 AttributeInstance attribute = skeleton.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED);
                 if (attribute != null) {
-                    attribute.setBaseValue(1.0);
+                    attribute.setBaseValue(0.25 * 1.5);
                 }
             }
         }

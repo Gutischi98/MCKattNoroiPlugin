@@ -22,7 +22,7 @@ public class ZombieMovSpeedModifier implements Listener {
             Zombie zombie = (Zombie) event.getEntity();
             AttributeInstance attribute = zombie.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED);
             if (attribute != null) {
-                attribute.setBaseValue(1.0);
+                attribute.setBaseValue(0.23 * 1.5);
             }
         }
     }

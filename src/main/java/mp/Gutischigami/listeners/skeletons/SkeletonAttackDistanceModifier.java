@@ -18,7 +18,7 @@ public class SkeletonAttackDistanceModifier implements Listener {
         if (event.getDamager() instanceof Skeleton && event.getEntity() instanceof Player) {
             Skeleton skeleton = (Skeleton) event.getDamager();
             Player player = (Player) event.getEntity();
-            double customAttackRange = 9.0; //Distancia custom de ataque.
+            double customAttackRange = 12.0; //Distancia custom de ataque.
 
             if (skeleton.getLocation().distance(player.getLocation()) > customAttackRange) {
                 event.setCancelled(true);

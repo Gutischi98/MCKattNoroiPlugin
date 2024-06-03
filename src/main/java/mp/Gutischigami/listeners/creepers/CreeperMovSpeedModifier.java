@@ -22,7 +22,7 @@ public class CreeperMovSpeedModifier  implements Listener {
             Creeper creeper = (Creeper) event.getEntity();
             AttributeInstance attribute = creeper.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED);
             if (attribute != null) {
-                attribute.setBaseValue(1.0);
+                attribute.setBaseValue(0.25 * 1.5);
             }
         }
     }
