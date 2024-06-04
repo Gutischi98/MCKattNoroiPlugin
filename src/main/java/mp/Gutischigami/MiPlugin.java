@@ -1,6 +1,7 @@
 package mp.Gutischigami;
 import mp.Gutischigami.commands.MainCommand;
 import mp.Gutischigami.config.MainConfigManager;
+import mp.Gutischigami.listeners.Spiders.SpiderAttackDistanceModifier;
 import mp.Gutischigami.listeners.creepers.CreeperAttackDistanceModifier;
 import mp.Gutischigami.listeners.PlayerListener;
 import mp.Gutischigami.listeners.creepers.CreeperMovSpeedModifier;
@@ -26,6 +27,7 @@ public class MiPlugin extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new ZombieAttackDistanceModifier(this), this);
         getServer().getPluginManager().registerEvents(new CreeperAttackDistanceModifier(this), this);
         getServer().getPluginManager().registerEvents(new SkeletonAttackDistanceModifier(this), this);
+        getServer().getPluginManager().registerEvents(new SpiderAttackDistanceModifier(this), this);
         getServer().getPluginManager().registerEvents(new ZombieMovSpeedModifier(this), this);
         getServer().getPluginManager().registerEvents(new CreeperMovSpeedModifier(this), this);
         getServer().getPluginManager().registerEvents(new SkeletonMovSpeedModifier(this), this);
