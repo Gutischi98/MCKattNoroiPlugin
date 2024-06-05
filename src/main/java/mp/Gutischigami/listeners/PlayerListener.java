@@ -34,16 +34,10 @@ public class PlayerListener implements Listener {
         MainConfigManager mainConfigManager = plugin.getMainConfigManager();
         //crear la variable server.
         if (message.toLowerCase().contains("kike")){
-            //event.setCancelled(true);
-            //introducir serverBroadcast para insultar gratuitamente a quien insulte.
-            //ServerChat.chat(MessageUtils.getColoredMessage(MiPlugin.prefix + plugin.getMainConfigManager().getPreventKikeMessage()));
             Bukkit.getServer().broadcastMessage(MessageUtils.getColoredMessage(MiPlugin.prefix + "&cOye tonto, no escribai eso aweonao."));
-            //player.sendMessage(MessageUtils.getColoredMessage(MiPlugin.prefix + plugin.getMainConfigManager().getPreventKikeMessage())); //pasar el mensaje por chat para humillarlo.
+
         } else if (message.toLowerCase().contains("conchetumare")) {
-            //event.setCancelled(true);
-            //ServerChat.chat(MessageUtils.getColoredMessage(MiPlugin.prefix + plugin.getMainConfigManager().getPreventCtmMessage()));
             Bukkit.getServer().broadcastMessage(MessageUtils.getColoredMessage(MiPlugin.prefix + "&cOrdinario."));
-            //player.sendMessage(MessageUtils.getColoredMessage(MiPlugin.prefix + plugin.getMainConfigManager().getPreventCtmMessage())); //pasar el mensaje por chat para humillarlo.
         }
     }
 
